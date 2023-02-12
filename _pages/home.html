@@ -437,36 +437,155 @@ Cela signifie que :<br>
 
 - Choix de traduire les termes anglais en français :<br>
 
-Terme | Traduction | Raisons / Explications
---- | --- |--- | 
-Chain rule  | Règle de dérivation des fonctions composées | En pratique usage du terme « règle de la chaîne » dans les sous-titres des vidéos pour gagner de la place.
-CNN  | ConvNet | Yann tient particulièrement au respect de cette traduction. Voir notamment la page 202 du livre [*Quand la machine apprend*](https://www.odilejacob.fr/catalogue/sciences/informatique/quand-la-machine-apprend_9782738149312.php).
-Downstream tasks  | Tâches en aval | Les tâches de prétexte étant les tâches en amont.
-Energy-Based Models  | Modèles à base d’énergie | Traduction pas forcément satisfaisante mais adoptée faute de mieux.
-Embedding  | Enchâssement | Reprise de la traduction utilisée page 228 dans le livre *Quand la machine apprend*. Dans la littérature, il est possible de trouver également l'usage du terme « plongement » comme traduction. Parler tout simplement de vectorisation paraîtrait beaucoup plus simple pour faire le lien avec le concept mathématique (on vectorise un mot par exemple).
-Forward model | Modèle prédictif |
-Graph Neural Networks  | Réseaux de neurones pour graphe | En pratique, pour les sous-titres des vidéos, l'abréviation GNN est privilégiée.
-Graph Convolution Networks  | Réseaux convolutifs pour graphe | En pratique, pour les sous-titres des vidéos, l'abréviation GCN est privilégiée.
-Manifold  | Variété | Voir [l'article Wikipédia](https://fr.wikipedia.org/wiki/Vari%C3%A9t%C3%A9_(g%C3%A9om%C3%A9trie)).
-Nonlinearity function	 | Fonction non linéaire | En français, on utilise également le terme de « fonction d’activation ».
-Overfitting  | Surentraînement | Reprise de la traduction utilisée page 155 dans le livre *Quand la machine apprend*.
-Regularizer  | Régulariseur | Néologisme préférable à régularisateur.
-Sparse  | Epars | Pour l'expression « sparse matrix », nous traduisons « sparse » en « creuse » pour « matrice creuse ». Pour tous les autres cas nous utilisons « épars » ou « éparse » en fonction du genre du mot auquel l'adjectif se rapporte.
-Sparsity  | Eparsité | Néologisme basé sur le mot « épars ».
-Template Matching  | Template Matching | L'expression « appariement de patrons » comme traduction peut être trouvable sur le site ou dans les vidéos.
-Yann LeCun |	Yann Le Cun ou Yann	| L'explication de l'écriture du nom de famille est donnée page 193 du livre *Quand la machine apprend*. Dans les notes en anglais des étudiants, il est possible de trouver « Mr Yann LeCun », « Mr LeCun », « Doctor Yann LeCun », « Professor LeCun », etc. Nous utilisons simplement « Yann ».
+<table>
+<!-- =============================== HEADER ================================ -->
+  <thead>
+    <tr>
+      <th>Terme</th>
+      <th align="Traduction">Format</th>
+      <th align="Raisons / Explications">Titre</th>
+    </tr>
+  </thead>
+  <tbody>
+<!-- =============================== Ligne 1 ================================ -->
+    <tr>
+      <td rowspan="1" align="center">Chain rule</td>
+      <td rowspan="1">Règle de dérivation des fonctions composées</td>
+      <td>En pratique usage du terme « règle de la chaîne » dans les sous-titres des vidéos pour gagner de la place.</td>
+    </tr>
+<!-- =============================== Ligne 2 ================================ -->
+    <tr>
+      <td rowspan="1" align="center">CNN</td>
+      <td rowspan="1">ConvNet</td>
+      <td>Yann tient particulièrement au respect de cette traduction. Voir notamment la page 202 du livre <a href="https://www.odilejacob.fr/catalogue/sciences/informatique/quand-la-machine-apprend_9782738149312.php">Quand la machine apprend</a>.</td>
+    </tr>
+<!-- =============================== Ligne 3 ================================ -->
+    <tr>
+      <td rowspan="1" align="center">Downstream tasks</td>
+      <td rowspan="1">Tâches en aval</td>
+      <td>Les tâches de prétexte étant les tâches en amont.</td>
+    </tr>
+<!-- =============================== Ligne 4 ================================ -->
+    <tr>
+      <td rowspan="1" align="center">Energy-Based Models</td>
+      <td rowspan="1">Modèles à base d’énergie</td>
+      <td>Traduction pas forcément satisfaisante mais adoptée faute de mieux.</td>
+    </tr>
+<!-- =============================== Ligne 5 ================================ -->
+    <tr>
+      <td rowspan="1" align="center">Embedding</td>
+      <td rowspan="1">Enchâssement</td>
+      <td>Reprise de la traduction utilisée page 228 dans le livre <i>Quand la machine apprend</i>. Dans la littérature, il est possible de trouver également l'usage du terme « plongement » comme traduction. Parler tout simplement de vectorisation paraîtrait beaucoup plus simple pour faire le lien avec le concept mathématique (on vectorise un mot par exemple).</td>
+    </tr>
+<!-- =============================== Ligne 6 ================================ -->
+    <tr>
+      <td rowspan="1" align="center">Graph Neural Networks</td>
+      <td rowspan="1">Réseaux de neurones pour graphe</td>
+      <td>En pratique, pour les sous-titres des vidéos, l'abréviation GNN est privilégiée.</td>
+    </tr>
+<!-- =============================== Ligne 7 ================================ -->
+    <tr>
+      <td rowspan="1" align="center">Graph Convolution Networks</td>
+      <td rowspan="1">Réseaux convolutifs pour graphe</td>
+      <td>En pratique, pour les sous-titres des vidéos, l'abréviation GCN est privilégiée.</td>
+    </tr>
+<!-- =============================== Ligne 8 ================================ -->
+    <tr>
+      <td rowspan="1" align="center">Manifold</td>
+      <td rowspan="1">Variété</td>
+      <td>Voir <a href="https://fr.wikipedia.org/wiki/Vari%C3%A9t%C3%A9_(g%C3%A9om%C3%A9trie)">l'article Wikipédia</a></td>
+    </tr>
+<!-- =============================== Ligne 9 ================================ -->
+    <tr>
+      <td rowspan="1" align="center">Nonlinearity function</td>
+      <td rowspan="1">Fonction non linéaire</td>
+      <td>En français, on utilise également le terme de « fonction d’activation ».</td>
+    </tr>
+<!-- =============================== Ligne 10 ================================ -->
+    <tr>
+      <td rowspan="1" align="center">Overfitting</td>
+      <td rowspan="1">Surentraînement</td>
+      <td>Overfitting  | Surentraînement | Reprise de la traduction utilisée page 155 dans le livre <i>Quand la machine apprend</i>.</td>
+    </tr>
+<!-- =============================== Ligne 11 ================================ -->
+    <tr>
+      <td rowspan="1" align="center">Regularizer</td>
+      <td rowspan="1">Régulariseur</td>
+      <td>Néologisme préférable à régularisateur.</td>
+    </tr>
+<!-- =============================== Ligne 12 ================================ -->
+    <tr>
+      <td rowspan="1" align="center">Sparse</td>
+      <td rowspan="1">Epars</td>
+      <td>Pour l'expression « <i>sparse matrix</i> », nous traduisons « sparse » en « creuse » pour « matrice creuse ». Pour tous les autres cas nous utilisons « épars » ou « éparse » en fonction du genre du mot auquel l'adjectif se rapporte.</td>
+    </tr>
+<!-- =============================== Ligne 13 ================================ -->
+    <tr>
+      <td rowspan="1" align="center">Sparsity</td>
+      <td rowspan="1">Eparsité</td>
+      <td>Néologisme basé sur le mot « épars ».</td>
+    </tr>
+<!-- =============================== Ligne 14 ================================ -->
+    <tr>
+      <td rowspan="1" align="center">Template Matching</td>
+      <td rowspan="1">Template Matching</td>
+      <td>L'expression « appariement de patrons » comme traduction peut être trouvable sur le site ou dans les vidéos.</td>
+    </tr>	
+<!-- =============================== Ligne 15 ================================ -->
+    <tr>
+      <td rowspan="1" align="center">Yann LeCun</td>
+      <td rowspan="1">Yann Le Cun ou Yann</td>
+      <td> L'explication de l'écriture du nom de famille est donnée page 193 du livre <i>Quand la machine apprend</i>. Dans les notes en anglais des étudiants, il est possible de trouver « <i>Mr Yann LeCun</i> », « <i>Mr LeCun</i> », « <i>Doctor Yann LeCun</i> », « <i>Professor LeCun</i> », etc. Nous utilisons simplement « Yann ».</td>
+    </tr>
+  </tbody>
+</table>
+
  
  - Choix de ne pas traduire les termes anglais en français :<br> 
 Nous avons fait le choix de ne pas traduire certains termes anglais pour des raisons pratiques. Par exemple, certains concepts nécessitent 3 ou 4 mots en français là où 1 seul suffit en anglais. Cela pose notamment problème pour les vidéos où le temps d'affichage est limité, d'où la préférence à garder le terme en anglais. Il serait possible d'utiliser des néologismes mais nous avons préféré ne pas en imposer car ne pouvant peut-être pas faire consensus. Sur le site, les mots laissés en anglais sont indiqués en italique. 
 
-Terme | Traduction | Raisons / Explications
---- | --- |--- | 
-Dropout | Dropout | Le mot « décimation » serait approprié mais il est déjà utilisé en traitement du signal pour signifier « sous-échantillonnage ».
-Finetuning | Finetuning | Le terme « affinage » peut être trouvable dans la littérature. 
-One hot | One hot | La notion de « vecteurs de base canonique » pourrait être utilisée mais elle est un peu technique et l'expression est plutôt longue pour traduire à peine 2 mots.  N.D.T : lorsque j'étais étudiant, dans mes cours d'algèbre linéaire, j'utilisais soit « v.b.c » pour « vecteurs de base canonique » ou bien « zérun » (pour un vecteur contenant des 0 et un 1) mais il s'agit d'une convention personnelle que je ne préfère pas imposer.
-Pooling | Pooling | Plusieurs traductions envisagées comme agrégation, agglomération, ou coalescence. Garder le terme en anglais est plus simple (un « max-agrégation » n'est pas très élégant par exemple).
-Transformer
-
+<table>
+<!-- =============================== HEADER ================================ -->
+  <thead>
+    <tr>
+      <th>Terme</th>
+      <th align="Traduction">Format</th>
+      <th align="Raisons / Explications">Titre</th>
+    </tr>
+  </thead>
+  <tbody>
+<!-- =============================== Ligne 1 ================================ -->
+    <tr>
+      <td rowspan="1" align="center">Dropout</td>
+      <td rowspan="1">Dropout</td>
+      <td>Le mot « décimation » serait approprié mais il est déjà utilisé en traitement du signal pour signifier « sous-échantillonnage ».</td>
+    </tr>
+<!-- =============================== Ligne 2 ================================ -->
+    <tr>
+      <td rowspan="1" align="center">Finetuning</td>
+      <td rowspan="1">Finetuning</td>
+      <td>Le terme « affinage » peut être trouvable dans la littérature. </td>
+    </tr>
+<!-- =============================== Ligne 3 ================================ -->
+    <tr>
+      <td rowspan="1" align="center">One hot</td>
+      <td rowspan="1">One hot</td>
+      <td>La notion de « vecteurs de base canonique » pourrait être utilisée mais elle est un peu technique et l'expression est plutôt longue pour traduire à peine 2 mots.  N.D.T : lorsque j'étais étudiant, dans mes cours d'algèbre linéaire, j'utilisais soit « v.b.c » pour « vecteurs de base canonique » ou bien « zérun » (pour un vecteur contenant des 0 et un 1) mais il s'agit d'une convention personnelle que je ne préfère pas imposer.</td>
+    </tr>
+<!-- =============================== Ligne 4 ================================ -->
+    <tr>
+      <td rowspan="1" align="center">Pooling</td>
+      <td rowspan="1">Pooling</td>
+      <td>Plusieurs traductions envisagées comme agrégation, agglomération, ou coalescence. Garder le terme en anglais est plus simple (un « max-agrégation » n'est pas très élégant par exemple).</td>
+    </tr>
+<!-- =============================== Ligne 5 ================================ -->
+    <tr>
+      <td rowspan="1" align="center">Transformer</td>
+      <td rowspan="1">Transformer</td>
+      <td>A COMPLETER.</td>
+    </tr>
+  </tbody>
+</table>
 
 <br><br><br>
 <h1 style="text-align: center;">Jeu de données</h1>
