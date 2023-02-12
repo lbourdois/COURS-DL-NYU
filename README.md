@@ -1,1 +1,1 @@
-# NYU-DL-course
+# COURS-DL-NYU
