@@ -11,13 +11,13 @@ layout: splash
 <h1 style="text-align: center;">Avant-propos sur le cours</h1>
 <p style="text-align:justify;">
  Ce cours, entièrement gratuit, porte sur les récentes techniques d’apprentissage profond. 
-Il se concentre sur les différentes méthodes d’apprentissage (supervisé, non supervisé et autosupervisté), les différentes architectures existantes (ConvNets, RNNs, LSTMs, Transformer, GANs, GNNs, etc.)les méthodes d’enchâssement (contrastives, non-contrastives, génératives) et pleins d’autres choses !
+Il se concentre sur les différentes méthodes d’apprentissage (supervisé, non supervisé et autosupervisté), les différentes architectures existantes (ConvNets, RNNs, LSTMs, Transformer, GANs, GNNs, etc.), les méthodes d’enchâssement (contrastives, non-contrastives, génératives) et pleins d’autres choses !
 Il est illustré d’applications à la vision par ordinateur, à la compréhension du langage naturel et à la reconnaissance vocale.<br>
 Il est à souligner qu'après une présentation de la vision probabiliste de l'apprentissage profond lors du premier tiers du cours, la suite met particulièrement l'accent sur les modèles à base d'énergie (EBMs pour <i>energy based model</i>) issus de la physique.
 En effet, il est possible de montrer via la distribution de Gibbs-Boltzmann, convertissant l'énergie en probabilité, que les EBMs engloblent le cadre probabiliste.
-L'approche énergétique permet alors de recourir à des fonctions de perte plus souples notamment lors de l'inférence.  
+L'approche énergétique permet alors de recourir à des fonctions de perte plus souples notamment lors de l'inférence.<br>
 A l'issue du cours, vous devriez être en mesure de disposer des clés pour comprendre les concepts développés par Yann dans son article <a href="https://openreview.net/forum?id=BZ5a1r-kVsf"><i>A Path Towards Autonomous Machine Intelligence</i></a>  présentant sa vision d'une voie vers l'intelligence autonome des machines.    
-<br>
+<br><br>
 A noter que pour suivre ce cours, il est fortement conseillé d’avoir des prérequis en algèbre et d’avoir déjà suivi un cours introductif d’apprentissage machine ou de science des données. Ces cours sont destinés à des personnes de niveau bac+4 ou bac+5.</p> 
 </p>
 <br><br><br>
@@ -25,9 +25,9 @@ A noter que pour suivre ce cours, il est fortement conseillé d’avoir des pré
 <h1 style="text-align: center;">Avant-propos sur la traduction française</h1>
 
 <p style="text-align:justify;">
-La traduction française du cours agrège trois versions anglaises différentes : l'édition printemps 2020 (DLSP20), l'édition printemps 2021 (DLSP21) et l'édition automne 2022 (DLFL22).<br>
+La traduction française du cours agrège trois versions anglaises différentes : l'édition printemps 2020 (DLSP20 sur YouTube), l'édition printemps 2021 (DLSP21) et l'édition automne 2022 (DLFL22).<br>
 Plus précisément, l'entièreté du cours de 2020 a été traduit. Pour les éditions 2021 et 2022, nous nous sommes limités à traduire les interventions des conférenciers invités qui étaient inédites contrairement au reste du cours qui reste très sensiblement similaire à celui de 2020.
-Cependant, lors des éditions de 2021 et 2022, des actualisations de certains contenus ont pû être opérées. Ces actualisation ont également été traduites.<br><br>
+Cependant, lors des éditions de 2021 et 2022, des actualisations de certains contenus ont pû être opérées. Ces actualisations ont également été traduites.<br><br>
 
 Le contenu traduit représente <b>33 vidéos</b> (cours magistraux et travaux dirigés) d’une durée totale d’environ 45h, <b>59 [NOMBRE A METTRE A JOUR] pages web</b> de notes de cours prises par les étudiants et <b><i>16 notebooks Jupyter</i></b> utilisés lors des travaux dirigés.<br>
 La manière de trouver l'ensemble du matiériel du cours est décrit dans la section suivante.
@@ -50,11 +50,11 @@ Notez que si des concepts ne sont toujours pas compris à l’issue de la vidéo
 Les sites web servent ainsi davantage de résumé des vidéos ou encore de base que vous pouvez réutiliser pour vos notes personnelles que vous prenez pendant le visionnage des vidéos. 
 <br><br>
 
-Dans ce qui suit, le cours a été divisé en 19 unités. Pour chacune d'elles, vous trouverez listés dans « Ressources », les liens vers les vidéos de cours et de TD, les notes de cours, les compléments (= l'actualisation de certaines parties de l'édition 2020 dans l'édition 2021), les diapositives et les *notebooks*.
+Dans ce qui suit, le cours a été divisé en 19 unités. Pour chacune d'elles, vous trouverez listés dans « Ressources », les liens vers les vidéos de cours et de TD, les notes de cours, les compléments (i.e. l'actualisation de certaines parties de l'édition 2020 dans l'édition 2021), les diapositives et les <i>notebooks</i> utilisés.
 </p>
 <br><br>
 
-<b>Unité 1</b><br>
+<b><u>UNITÉ 1</u></b><br>
 <p style="text-align:justify;">
 • <a href="https://www.youtube.com/watch?v=0bMe_vCZo30"><b>CM : Histoire, motivation, et évolution de l’apprentissage profond</b></a><br>
 Ce premier cours magistral porte sur la motivation, l’histoire et l’inspiration derrière l'apprentissage profond. 
@@ -75,7 +75,7 @@ Dans ce TD, nous parlons d'algèbre linéaire et de l'application de transformat
 <a href="https://github.com/lbourdois/pytorch-Deep-Learning-Notebooks-in-French/blob/master/01-tensor_tutorial.ipynb">notebook n°1</a>,
 <a href="https://github.com/lbourdois/pytorch-Deep-Learning-Notebooks-in-French/blob/master/02-space_stretching.ipynb">notebook n°2</a><br><br>
 
-<b>Unité 2</b><br>
+<b><u>UNITÉ 2</u></b><br>
 • <a href="https://www.youtube.com/watch?v=d9vdh3b787Y"><b>CM : Descente de gradient stochastique et rétropropagation</b></a><br>
 Le cours commence avec une discussion sur ce que sont les modèles paramétrés et ce qu'est une fonction de perte. 
 Nous examinons ensuite les méthodes basées sur le gradient (stochastique) et comment elles sont utilisées dans l'algorithme de rétropropagation d'un réseau neuronal traditionnel. 
@@ -251,7 +251,7 @@ Nous proposons un apprentissage efficace des politiques pour conduire dans un tr
 <b>Unité 12</b><br>
 • <a href="https://www.youtube.com/watch?v=6D4EWKJgNn0"><b>CM : Apprentissage profond pour le traitement du langage naturel</b></a><br>
 Troisième invité du cours : Mike Lewis. Nous examinons avec lui les différentes architectures utilisées dans les applications du traitement du langage naturel en commençant par les ConvNets, les RNNs et finalement les <i>transformers</i>. Nous nous focalisation sur les différents modules qui composent les <i>transformers</i> et sur des astuces permettant de les entraîner de manière efficace.
-La suite de la présentation porte sur la recherche en faisceau comme une solution intermédiaire entre le décodage gourmand et la recherche exhaustive. Nous considérons le cas où l'on souhaite échantillonner à partir de la distribution générative et introduisons l'échantillonnage top-k. Ensuite, nous introduisons les modèles séquence à séquence et la rétro-traduction. Nous terminons avec une discussion sur le word2vec, GPT et BERT. 
+La suite de la présentation porte sur la recherche en faisceau comme une solution intermédiaire entre le décodage gourmand et la recherche exhaustive. Nous considérons le cas où l'on souhaite échantillonner à partir de la distribution générative et introduisons l'échantillonnage top-k. Ensuite, nous introduisons les modèles séquence à séquence et la rétro-traduction. Nous terminons avec une discussion sur le word2vec, GPT et BERT.<br>
 <b>Ressources : </b>
 <a href="https://www.youtube.com/watch?v=6D4EWKJgNn0">vidéo</a>, 
 <a href="https://atcold.github.io/pytorch-Deep-Learning/fr/week12/12-1/">notes de cours 1/2</a>,
@@ -609,7 +609,7 @@ Nous avons fait le choix de ne pas traduire certains termes anglais pour des rai
       <td rowspan="1">Transformer</td>
       <td>En français, les mots anglais se terminant par « er » sont généralement traduits par « eur », comme par exemple « encoder » en « encodeur » ou, dans la même logique, « decoder » en « decodeur ».
 Logiquement, « tranformers » devrait se traduire par « transformeurs ». Mais ce n'est pas si simple.
-L'article <a href="http://yann.lecun.com/exdb/publis/pdf/lecun-01a.pdf">Gradient-based learning applied to document recognition</a>) est généralement cité pour ses trois premiers chapitres exposant un ConvNet appliqué à la reconnaissance MNIST. Mais les suivant traite des GTNs, les *Graph Transformer Networks*, qui sont issus du travail de Léon Bottou.
+L'article <a href="http://yann.lecun.com/exdb/publis/pdf/lecun-01a.pdf">Gradient-based learning applied to document recognition</a>) est généralement cité pour ses trois premiers chapitres exposant un ConvNet appliqué à la reconnaissance MNIST. Mais les suivant traite des GTNs, les <i>Graph Transformer Networks</i>, qui sont issus du travail de Léon Bottou.
 Comme leur nom l'indique, les GTNs contiennent le mot « transformer », mais cela n'a rien à voir avec celui de Vaswani et al. ayant vu le jour plus de 19 ans plus tard. 
 Les articles traitent de choses différentes, il faudrait traduire le « transformer » de chaque papier différemment pour qu’il n’y ait pas de confusion entre les deux concepts.
 En attendant de pouvoir trancher cette question, il a été choisi de laisser le « transformer » en sa forme anglaise indiquer en italique pour éviter une confusion supplémentaire avec le verbe « transformer » en français.
