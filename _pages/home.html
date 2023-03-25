@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Cours d'apprentissage profond de l'Université de New York"
+title: "Cours d'apprentissage profond de la New York University"
 excerpt: "Le cours de Yann LE CUN et Alfredo CANZIANI<br> traduit en français par Loïck BOURDOIS"
 header:
    overlay_color: "#57068C"
@@ -8,19 +8,34 @@ layout: splash
 ---
 
 </style>
-<h1 style="text-align: center;">Avant-propos</h1>
-<p> Ce cours porte sur les récentes techniques de représentation et d’apprentissage profond. Il se concentre sur l’apprentissage supervisé, non supervisé et autosupervisté, mais aussi sur les méthodes d’enchâssement, les réseaux convolutifs et récurrents.
- Il est illustré d’applications à la vision par ordinateur, la compréhension du langage naturel et la reconnaissance vocale.</p> 
+<h1 style="text-align: center;">Avant-propos sur le cours</h1>
+<p> Ce cours, entièrement gratuit, porte sur les récentes techniques d’apprentissage profond. 
+Il se concentre sur les différentes méthodes d’apprentissage (supervisé, non supervisé et autosupervisté), les différentes architectures existantes (ConvNets, RNNs, LSTMs, Transformer, GANs, GNNs, etc.)
+les méthodes d’enchâssement (contrastives, non-contrastives, génératives) et pleins d’autres choses !
+Il est illustré d’applications à la vision par ordinateur, à la compréhension du langage naturel et à la reconnaissance vocale.  
+Il est à souligner qu'après une présentation de la vision probabiliste de l'apprentissage profond lors du premier tiers du cours, la suite met particulièrement l'accent sur les modèles à base d'énergie (EBMs pour *energy based model*) issus de la physique.
+En effet, il est possible de montrer via la distribution de Gibbs-Boltzmann, convertissant l'énergie en probabilité, que les EBMs engloblent le cadre probabiliste.
+L'approche énergétique permet alors de recourir à des fonctions de perte plus souples notamment lors de l'inférence.  
+A l'issue du cours, vous devriez être en mesure de disposer des clés pour comprendre les concepts développés par Yann dans son article <a href="https://openreview.net/forum?id=BZ5a1r-kVsf">*A Path Towards Autonomous Machine Intelligence*</a>  présentant sa vision d'une voie vers l'intelligence autonome des machines.    
 
-<p> Pour suivre ce cours, il est fortement conseillé d’avoir des prérequis en algèbre et d’avoir déjà suivi un cours introductif d’apprentissage machine ou de science des données. Ces cours sont destinés à des personnes de niveau bac+4 ou bac+5.</p> 
+A noter que pour suivre ce cours, il est fortement conseillé d’avoir des prérequis en algèbre et d’avoir déjà suivi un cours introductif d’apprentissage machine ou de science des données. Ces cours sont destinés à des personnes de niveau bac+4 ou bac+5.</p> 
+<br><br><br>
 
+<h1 style="text-align: center;">Avant-propos sur la traduction française</h1>
+La traduction française du cours agrège trois versions anglaises différentes : l'édition printemps 2020 (DLSP20), l'édition printemps 2021 (DLSP21) et l'édition automne 2022 (DLFL22).  
+Plus précisément, l'entièreté du cours de 2020 a été traduit. Pour les éditions 2021 et 2022, nous nous sommes limités à traduire les interventions des conférenciers invités qui étaient inédites contrairement au reste du cours qui reste très sensiblement similaire à celui de 2020.
+Cependant, lors des éditions de 2021 et 2022, des actualisations de certains contenus ont pû être opérées. Ces actualisation ont également été traduites.  
+
+Le contenu traduit représente 33 vidéos (cours magistraux et travaux dirigés) d’une durée totale d’environ 45h, 59 [NOMBRE A METTRE A JOUR] pages web de notes de cours prises par les étudiants et 16 *notebooks* Jupyter utilisés lors des travaux dirigés.  
+La manière de trouver l'ensemble du matiériel du cours est décrit dans la section suivante.
+ 
 
 <br><br><br>
 <h1 style="text-align: center;">Programme</h1>
 
 <p>
-Nous vous invitons à privilégier les vidéos de la playlist <a href="https://www.youtube.com/watch?v=0bMe_vCZo30&list=PLLHTzKZzVU9eaEyErdV26ikyolxOsz6mq">YouTube</a> (contenu « officiel ») puisque le cours y est donné par le corps enseignant contrairement au site web où il s’agit des notes prises par les étudiants pendant le cours.
-Le site web étant des résumés des vidéos, celles-ci comprennent donc généralement des informations supplémentaires par rapport au site. Comme par exemple :<br>
+Nous vous invitons à privilégier les vidéos de la playlist <a href="https://www.youtube.com/watch?v=0bMe_vCZo30&list=PLLHTzKZzVU9eaEyErdV26ikyolxOsz6mq">YouTube</a> (contenu « officiel ») puisque le cours y est donné par le corps enseignant contrairement aux sites web (<a href="https://atcold.github.io/pytorch-Deep-Learning/fr/">ici</a> et <a href="https://atcold.github.io/NYU-DLSP21/fr/">ici</a>) où il s’agit des notes prises par les étudiants pendant le cours.
+Les sites web étant des résumés des vidéos, celles-ci comprennent donc généralement des informations supplémentaires. Par exemple :<br>
 - des anecdotes sur les différents concepts abordés,<br>
 - des blagues,<br>
 - la répétition d’un même concept mais sous la forme de différentes formulations permettant ainsi généralement de comprendre une idée si une première formulation n’est pas saisie,<br> 
@@ -28,24 +43,25 @@ Le site web étant des résumés des vidéos, celles-ci comprennent donc génér
 Notez que si des concepts ne sont toujours pas compris à l’issue de la vidéo, vous avez la possibilité de poser une question en commentaire de la vidéo YouTube, ce que ne permet pas le site web.<br>
 - les références des articles sur lesquels se basent le cours sont présentes sur les diapositives des vidéos alors qu’elles sont absentes du site. <br><br>
   
-Le site web sert ainsi davantage de résumé des vidéos ou encore de base que vous pouvez réutiliser pour vos notes personnelles que vous prenez pendant le visionnage des vidéos. 
-En cas de besoin vous pouvez facilement basculer du site à un moment d’une vidéo donnée en cliquant sur les titres des paragraphes des pages web.
+Les sites web servent ainsi davantage de résumé des vidéos ou encore de base que vous pouvez réutiliser pour vos notes personnelles que vous prenez pendant le visionnage des vidéos. 
+<br><br>
+
+Dans ce qui suit, le cours a été divisé en 19 unités. Pour chacune d'elles, vous trouverez listés dans « Ressources », les liens vers les vidéos de cours et de TD, les notes de cours, les compléments (= l'actualisation de certaines parties de l'édition 2020 dans l'édition 2021), les diapositives et les *notebooks*.
 </p>
-<br>
-<br>
+<br><br>
 
 <b>Unité 1</b><br>
-<a href="https://www.youtube.com/watch?v=0bMe_vCZo30"><b>CM : Histoire, motivation, et évolution de l’apprentissage profond</b></a><br>
+• <a href="https://www.youtube.com/watch?v=0bMe_vCZo30"><b>CM : Histoire, motivation, et évolution de l’apprentissage profond</b></a><br>
 Ce premier cours magistral porte sur la motivation, l’histoire et l’inspiration derrière l'apprentissage profond. 
-La reconnaissance des motifs et la représentation hiérarchique du cortex visuel sont aussi abordées. Le cours se poursuit ensuite sur l'évolution des ConvNets, de Fukushima à Le Cun et Alexnet. 
-Des exemples d’applications des ConvNets sont abordés comme la segmentation d'images, les véhicules autonomes et l'analyse d'images médicales. 
+Nous parlons aussi de reconnaissance des motifs et de la représentation hiérarchique du cortex visuel sont. Nous poursuivons sur l'évolution des ConvNets, de Fukushima à Le Cun et Alexnet. 
+Des exemples d’applications des ConvNets sont donnés comme la segmentation d'images, les véhicules autonomes et l'analyse d'images médicales. 
 Le cours se conclut par une discussion sur la génération et l'apprentissage de caractéristiques/représentations.<br> 
 <b>Ressources : </b>
 <a href="https://www.youtube.com/watch?v=0bMe_vCZo30">vidéo</a>, 
 <a href="https://atcold.github.io/pytorch-Deep-Learning/fr/week01/01-1/">notes de cours 1/2</a>,
 <a href="https://atcold.github.io/pytorch-Deep-Learning/fr/week01/01-2/">notes de cours 2/2</a>, 
 <a href="https://drive.google.com/file/d/1Q7LtZyIS1f3TfeTGll3aDtWygh3GAfCb/view">diapositives</a><br>
-<a href="https://www.youtube.com/watch?v=5_qrxVq1kvc"><b>TD : Classification, algèbre linéaire, et visualisation</b></a><br>
+• <a href="https://www.youtube.com/watch?v=5_qrxVq1kvc"><b>TD : Classification, algèbre linéaire, et visualisation</b></a><br>
 Dans ce TD, nous parlons d'algèbre linéaire et de l'application de transformations linéaires et non linéaires.<br>
 <b>Ressources : </b>
 <a href="https://www.youtube.com/watch?v=5_qrxVq1kvc">vidéo</a>,
@@ -55,7 +71,7 @@ Dans ce TD, nous parlons d'algèbre linéaire et de l'application de transformat
 <a href="https://github.com/lbourdois/pytorch-Deep-Learning-Notebooks-in-French/blob/master/02-space_stretching.ipynb">notebook n°2</a><br><br>
 
 <b>Unité 2</b><br>
-<a href="https://www.youtube.com/watch?v=d9vdh3b787Y"><b>CM : Descente de gradient stochastique et rétropropagation</b></a><br>
+• <a href="https://www.youtube.com/watch?v=d9vdh3b787Y"><b>CM : Descente de gradient stochastique et rétropropagation</b></a><br>
 Le cours commence avec une discussion sur ce que sont les modèles paramétrés et ce qu'est une fonction de perte. 
 Nous examinons ensuite les méthodes basées sur le gradient (stochastique) et comment elles sont utilisées dans l'algorithme de rétropropagation d'un réseau neuronal traditionnel. 
 Une implémentation des divers modules de base d'un réseau neuronal en PyTorch est présentée ainsi qu'une forme plus généralisée de la rétropropagation et des astuces pratiques la concernant.<br> 
@@ -64,7 +80,7 @@ Une implémentation des divers modules de base d'un réseau neuronal en PyTorch 
 <a href="https://atcold.github.io/pytorch-Deep-Learning/fr/week02/02-1/">notes de cours 1/2</a>,
 <a href="https://atcold.github.io/pytorch-Deep-Learning/fr/week02/02-2/">notes de cours 2/2</a>, 
 <a href="https://drive.google.com/file/d/1w2jV_BT2hWzfOKBR02x_rB4-dfVUI6SR/view">diapositives</a><br>
-<a href="https://www.youtube.com/watch?v=WAn6lip5oWk"><b>TD : Entraînement d'un réseau de neurones</b></a><br>
+• <a href="https://www.youtube.com/watch?v=WAn6lip5oWk"><b>TD : Entraînement d'un réseau de neurones</b></a><br>
 Nous présentons les conventions utilisées pour entraîner un réseau de neurones. Le tout est illustré avec un exemple de classification multi-classes.<br>
 <b>Ressources : </b>
 <a href="https://www.youtube.com/watch?v=WAn6lip5oWk">vidéo</a>,
@@ -74,7 +90,7 @@ Nous présentons les conventions utilisées pour entraîner un réseau de neuron
 <a href="https://github.com/lbourdois/pytorch-Deep-Learning-Notebooks-in-French/blob/master/05-regression.ipynb">notebook 2</a><br><br>
 
 <b>Unité 3</b><br>
-<a href="https://www.youtube.com/watch?v=FW5gFiJb-ig"><b>CM : Réseaux de neurones convolutifs (ConvNets)</b></a><br>
+• <a href="https://www.youtube.com/watch?v=FW5gFiJb-ig"><b>CM : Réseaux de neurones convolutifs (ConvNets)</b></a><br>
 Nous débutons avec une visualisation d'un réseau neuronal à 6 couches. Ensuite, nous abordons le sujet de la convolution et des réseaux de neurones convolutifs (ConvNets) illustrée par la tâche de reconnaissance de chiffres sur MNIST. 
 Nous passons en revue plusieurs types de transformation de paramètres dans les ConvNets et introduisons l'idée de noyau, utilisé pour apprendre des caractéristiques d'une manière hiérarchique et classer nos données d'entrée.
 Nous développons les avantages du ConvNet qui explore pleinement les caractéristiques de composition, de stationnarité et de localité des images <br> 
@@ -83,7 +99,7 @@ Nous développons les avantages du ConvNet qui explore pleinement les caractéri
 <a href="https://atcold.github.io/pytorch-Deep-Learning/fr/week03/03-1/">notes de cours 1/2</a>,
 <a href="https://atcold.github.io/pytorch-Deep-Learning/fr/week03/03-2/">notes de cours 2/2</a>, 
 <a href="https://drive.google.com/file/d/1Q7LtZyIS1f3TfeTGll3aDtWygh3GAfCb/view">diapositives</a><br>
-<a href="https://www.youtube.com/watch?v=kwPWpVverkw"><b>TD : Propriétés des signaux naturels et ConvNets</b></a><br>
+• <a href="https://www.youtube.com/watch?v=kwPWpVverkw"><b>TD : Propriétés des signaux naturels et ConvNets</b></a><br>
 Nous voyons les propriétés des signaux les plus pertinentes pour les ConvNets, à savoir : la localité, la stationnarité et la compositionnalité. Nous abordons également la manière dont un noyau exploite ces caractéristiques en utilisant l'éparsité, le partage des poids et l'empilement des couches est ensuite explorée. Enfin nous effectuons une comparaison entre les performances des réseaux complètement connectés et les ConvNets pour différentes modalités de données.<br>
 <b>Ressources : </b><a href="https://www.youtube.com/watch?v=kwPWpVverkw">vidéo</a>,
 <a href="https://atcold.github.io/pytorch-Deep-Learning/fr/week03/03-3/">notes de cours</a>, 
@@ -91,7 +107,7 @@ Nous voyons les propriétés des signaux les plus pertinentes pour les ConvNets,
 <a href="https://github.com/lbourdois/pytorch-Deep-Learning-Notebooks-in-French/blob/master/06-convnet.ipynb">notebook</a><br><br>
 
 <b>Unité 4</b><br>
-<a href="https://www.youtube.com/watch?v=OrBEon3VlQg"><b>TD : Ecouter les convolutions</b></a><br>
+• <a href="https://www.youtube.com/watch?v=OrBEon3VlQg"><b>TD : Ecouter les convolutions</b></a><br>
 Nous commençons par une brève revue de l'algèbre linéaire puis nous étendons le sujet aux convolutions en utilisant des données audios comme exemple. Des concepts clés comme la localité, la stationnarité et la matrice de Toeplitz sont discutés. Ensuite, nous faisons une démonstration en direct de la performance des convolutions dans l'analyse de la hauteur du son. <br> 
 <b>Ressources : </b>
 <a href="https://www.youtube.com/watch?v=OrBEon3VlQg">vidéo</a>, 
@@ -100,7 +116,7 @@ Nous commençons par une brève revue de l'algèbre linéaire puis nous étendon
 <a href="https://github.com/lbourdois/pytorch-Deep-Learning-Notebooks-in-French/blob/master/07-listening_to_kernels.ipynb">notebook 1</a><br><br>
 
 <b>Unité 5</b><br>
-<a href="https://www.youtube.com/watch?v=--NZb480zlg"><b>CM : Optimisation</b></a><br>
+• <a href="https://www.youtube.com/watch?v=--NZb480zlg"><b>CM : Optimisation</b></a><br>
 Première vidéo avec un intervenant extérieur, Aaron Defazio, venu parler d'optimisation. Sa présentation commence avec le sujet de la descente par gradient. Ensuite, la descente de gradient stochastique (SGD) et l'intuition et la mise à jour du momentum pour arriver à une convergence.
 La présentation se poursuit sur les méthodes adaptatives pour la SGD telles que RMSprop et ADAM. Un point porte ensuite sur les couches de normalisation et leurs effets sur le processus d'entraînement du réseau neuronal. La conférence se cloture sur un exemple concret d'optimisation des réseaux de neurones dans l'industrie pour rendre les scans IRM plus rapides et plus efficaces.<br> 
 <b>Ressources : </b>
@@ -108,7 +124,7 @@ La présentation se poursuit sur les méthodes adaptatives pour la SGD telles qu
 <a href="https://atcold.github.io/pytorch-Deep-Learning/fr/week05/05-1/">notes de cours 1/2</a>,
 <a href="https://atcold.github.io/pytorch-Deep-Learning/fr/week05/05-2/">notes de cours 2/2</a>, 
 <a href="https://drive.google.com/file/d/1Q7LtZyIS1f3TfeTGll3aDtWygh3GAfCb/view">diapositives</a><br>
-<a href="https://www.youtube.com/watch?v=eEzCZnOFU1w"><b>TD : Convolution multi-canaux 1D et autograd</b></a><br>
+• <a href="https://www.youtube.com/watch?v=eEzCZnOFU1w"><b>TD : Convolution multi-canaux 1D et autograd</b></a><br>
 Le TD commence avec un bref récapitulatif des multiplications matricielles et des convolutions. Nous commençons par comprendre la convolution 1D à la main, puis utilisons PyTorch pour apprendre la dimension des noyaux et la largeur de sortie dans des exemples de convolutions 1D et 2D. Nous terminons avec l'explication du fonctionnement de la fonction <code>autograd</code>.<br>
 <b>Ressources : 
 </b><a href="https://www.youtube.com/watch?v=eEzCZnOFU1w">vidéo</a>,
@@ -117,7 +133,7 @@ Le TD commence avec un bref récapitulatif des multiplications matricielles et d
 <a href="https://github.com/lbourdois/pytorch-Deep-Learning-Notebooks-in-French/blob/master/03-autograd_tutorial.ipynb">notebook</a><br><br>
 
 <b>Unité 6</b><br>
-<a href="https://www.youtube.com/watch?v=ycbMGyCPzvE"><b>CM : Applications des ConvNets, RNNs et attention</b></a><br>
+• <a href="https://www.youtube.com/watch?v=ycbMGyCPzvE"><b>CM : Applications des ConvNets, RNNs et attention</b></a><br>
 Nous discutons d'applications des réseaux de neurones convolutifs. Premièrement, la reconnaissance de chiffres et l'application à la reconnaissance d'un code postal à 5 chiffres. Deuxièmement, une architecture multi-échelle dans un contexte de détection de visage. Enfin, des tâches de segmentation sémantique avec des exemples concrets dans un système de vision robotique et la segmentation d'objets dans un environnement urbain.
 Nous poursuivons avec les réseaux neuronaux récurrents (RNNs), leurs problèmes, et une variété de modules développés pour résoudre ces problèmes, notamment l'attention, les GRUs (<i>)Gated Recurrent Unit</i>)) et les LSTMs (<i>)Long Short-Term</i>).<br> 
 <b>Ressources : 
@@ -125,7 +141,7 @@ Nous poursuivons avec les réseaux neuronaux récurrents (RNNs), leurs problème
 <a href="https://atcold.github.io/pytorch-Deep-Learning/fr/week06/06-1/">notes de cours 1/2</a>,
 <a href="https://atcold.github.io/pytorch-Deep-Learning/fr/week06/06-2/">notes de cours 2/2</a>, 
 <a href="https://drive.google.com/file/d/1Q7LtZyIS1f3TfeTGll3aDtWygh3GAfCb/view">diapositives</a><br>
-<a href="https://www.youtube.com/watch?v=8cAffg2jaT0"><b>TD : Architectures des RNNs et des LSTMs</b></a><br>
+• <a href="https://www.youtube.com/watch?v=8cAffg2jaT0"><b>TD : Architectures des RNNs et des LSTMs</b></a><br>
 Nous discutons de l'architecture des RNNs et des LSTMs et comparons les performances entre les deux. Les LSTMs héritent des avantages du RNN, tout en améliorant leurs faiblesses en incluant une « cellule mémoire » pour stocker l'information en mémoire pour de longues périodes de temps.<br>
 <b>Ressources : </b>
 <a href="https://www.youtube.com/watch?v=8cAffg2jaT0">vidéo</a>,
@@ -135,7 +151,7 @@ Nous discutons de l'architecture des RNNs et des LSTMs et comparons les performa
 <a href="https://github.com/lbourdois/pytorch-Deep-Learning-Notebooks-in-French/blob/master/09-echo_data.ipynb">notebook 2</a><br><br>
 
 <b>Unité 7</b><br>
-<a href="https://www.youtube.com/watch?v=tVwV14YkbYs"><b>CM : Modèles à base d’énergie (EBMs) et apprentissage autosupervisé</b></a><br>
+• <a href="https://www.youtube.com/watch?v=tVwV14YkbYs"><b>CM : Modèles à base d’énergie (EBMs) et apprentissage autosupervisé</b></a><br>
 Nous introduisons le concept des modèles à base d'énergie (EBMs). Pour résoudre la difficulté de l'inférence dans les EBMs, des variables latentes sont utilisées pour fournir des informations auxiliaires et permettre plusieurs prédictions possibles. Est expliquée ensuite la manière dont un EBM peut être vu comme une généralisation d'un modèle probabiliste avec des fonctions de notation plus flexibles.
 Un point est fait sur l'apprentissage autosupervisé avant de montrer comment entraîner un EBM, ce qu'est qu'un EBM à variable latente, en prenant comme exemple les K-means. 
 La dernière partie du cours porte sur les méthodes contrastives et leur processus d'entraînement via l'explication d'un auto-encodeur débruiteur. La divergence contrastive est également expliquée à l'aide d'une carte topographique.<br> 
@@ -144,16 +160,17 @@ La dernière partie du cours porte sur les méthodes contrastives et leur proces
 <a href="https://atcold.github.io/pytorch-Deep-Learning/fr/week07/07-1/">notes de cours 1/2</a>,
 <a href="https://atcold.github.io/pytorch-Deep-Learning/fr/week07/07-2/">notes de cours 2/2</a>, 
 <a href="https://drive.google.com/file/d/1Q7LtZyIS1f3TfeTGll3aDtWygh3GAfCb/view">diapositives</a><br>
-<a href="https://www.youtube.com/watch?v=bggWQ14DD9M"><b>TD : Auto-encodeurs sous/sur-complets</b></a><br>
+• <a href="https://www.youtube.com/watch?v=bggWQ14DD9M"><b>TD : Auto-encodeurs sous/sur-complets</b></a><br>
 Nous voyons quelques applications des auto-encodeurs et expliquons pourquoi nous voulons les utiliser. Nous parlons ensuite des différentes architectures d'auto-encodeurs (couche cachée complète ou non), de la manière d'éviter les problèmes de surentraînement et des fonctions de perte à utiliser. Enfin, nous implémentons un auto-encodeur standard et un auto-encodeur débruiteur.<br>
 <b>Ressources : </b>
 <a href="https://www.youtube.com/watch?v=bggWQ14DD9M">vidéo</a>,
-<a href="https://atcold.github.io/pytorch-Deep-Learning/fr/week07/07-3/">notes de cours</a>, 
+<a href="https://atcold.github.io/pytorch-Deep-Learning/fr/week07/07-3/">notes de cours</a>,
+<a href="https://atcold.github.io/NYU-DLSP21/fr/week07/07-3/">compléments</a>,
 <a href="https://github.com/Atcold/pytorch-Deep-Learning/blob/master/slides/01%20-%20Spiral%20classification.pdf">diapositives</a>,
 <a href="https://github.com/lbourdois/pytorch-Deep-Learning-Notebooks-in-French/blob/master/10-autoencoder.ipynb">notebook</a><br><br>
 
 <b>Unité 8</b><br>
-<a href="https://www.youtube.com/watch?v=ZaVP2SY23nc"><b>CM : Méthodes constratives et modèles à variable latente régularisée</b></a><br>
+• <a href="https://www.youtube.com/watch?v=ZaVP2SY23nc"><b>CM : Méthodes constratives et modèles à variable latente régularisée</b></a><br>
 Dans ce cours nous intéressons à l'introduction des méthodes contrastives dans les EBMs sous plusieurs aspects. Tout d'abord, nous discutons de l'avantage apporté par l'application des méthodes contrastives dans l'apprentissage autosupervisé. Ensuite, nous discutons de l'architecture des auto-encodeurs débruiteurs et de leur faiblesse dans les tâches de reconstruction d'images. Nous parlons aussi d'autres méthodes contrastives, comme la divergence contrastive et la divergence contrastive persistante.
 Nous abordons en détail les EBMs à variables latentes régularisées en couvrant les concepts des versions conditionnelles et inconditionnelles de ces modèles. Nous discutions ensuite des algorithmes ISTA, FISTA et LISTA et examinons des exemples de codage épars et de filtres appris à partir d’auto-encodeurs convolutifs épars. Enfin, nous parlons des auto-encodeurs variationnels et des concepts sous-jacents impliqués.<br> 
 <b>Ressources : </b>
@@ -161,16 +178,18 @@ Nous abordons en détail les EBMs à variables latentes régularisées en couvra
 <a href="https://atcold.github.io/pytorch-Deep-Learning/fr/week08/08-1/">notes de cours 1/2</a>,
 <a href="https://atcold.github.io/pytorch-Deep-Learning/fr/week08/08-2/">notes de cours 2/2</a>, 
 <a href="https://drive.google.com/file/d/1Q7LtZyIS1f3TfeTGll3aDtWygh3GAfCb/view">diapositives</a><br>
-<a href="https://www.youtube.com/watch?v=7Rb4s9wNOmc"><b>TD : Auto-encodeurs variationnels (VAEs)</b></a><br>
+• <a href="https://www.youtube.com/watch?v=7Rb4s9wNOmc"><b>TD : Auto-encodeurs variationnels (VAEs)</b></a><br>
 Dans ce TD nous discutons d'un type spécifique de modèle génératif appelé auto-encodeurs variationnels et nous comparons leurs fonctionnalités et leurs avantages par rapport aux auto-encodeurs classiques. Nous explorons en détail la fonction objectif des VAEs en comprenant comment elle impose une certaine structure dans l'espace latent. Enfin, nous implémentons et entraînons un VAE sur le jeu de données MNIST et l’utilisons pour générer de nouveaux échantillons.<br>
 <b>Ressources : </b>
 <a href="https://www.youtube.com/watch?v=7Rb4s9wNOmc">vidéo</a>,
 <a href="https://atcold.github.io/pytorch-Deep-Learning/fr/week08/08-3/">notes de cours</a>, 
+<a href="https://atcold.github.io/NYU-DLSP21/fr/week08/08-3/">compléments</a>,
+
 <a href="https://github.com/Atcold/pytorch-Deep-Learning/blob/master/slides/01%20-%20Spiral%20classification.pdf">diapositives</a>,
 <a href="https://github.com/lbourdois/pytorch-Deep-Learning-Notebooks-in-French/blob/master/11-VAE.ipynb">notebook<br><br>
 
 <b>Unité 9</b><br>
-<a href="https://www.youtube.com/watch?v=Pgct8PKV7iw"><b>CM : Eparsité de groupe, modèle du monde et GANs</b></a><br>
+• <a href="https://www.youtube.com/watch?v=Pgct8PKV7iw"><b>CM : Eparsité de groupe, modèle du monde et GANs</b></a><br>
 Nous discutons des auto-encodeurs épars récurrents discriminatifs et de l’éparsité de groupe. L'idée principale est de savoir comment combiner le codage épars avec l'entraînement discriminatif. Nous voyons comment structurer un réseau avec un auto-encodeur récurrent similaire à LISTA et un décodeur. Puis nous voyons la façon d'utiliser l’éparsité de groupe pour extraire des caractéristiques invariantes.
 Nous poursuivons avec des modèles du monde pour le contrôle autonome, y compris l'architecture du réseau neuronal et le schéma d'entraînement. Ensuite, nous discutons de la différence entre les modèles du monde et l'apprentissage par renforcement (RL). Enfin, nous étudions les réseaux génératifs antagonistes (GANs) en termes de modèle à base d'énergie avec la méthode contrastive.
 <br> 
@@ -179,17 +198,18 @@ Nous poursuivons avec des modèles du monde pour le contrôle autonome, y compri
 <a href="https://atcold.github.io/pytorch-Deep-Learning/fr/week09/09-1/">notes de cours 1/2</a>,
 <a href="https://atcold.github.io/pytorch-Deep-Learning/fr/week09/09-2/">notes de cours 2/2</a>, 
 <a href="https://drive.google.com/file/d/1Q7LtZyIS1f3TfeTGll3aDtWygh3GAfCb/view">diapositives</a><br>
-<a href="https://www.youtube.com/watch?v=xYc11zyZ26M"><b>TD : GANs vus à travers les EBMs</b></a><br>
+• <a href="https://www.youtube.com/watch?v=xYc11zyZ26M"><b>TD : GANs vus à travers les EBMs</b></a><br>
 Nous discutons des réseaux génératifs antagonistes (GANs) pour produire des modèles génératifs réalistes ainsi que de leurs limites. Nous comparons les GANs aux VAEs de l'unité 8 pour mettre en évidence les différences clés entre les deux réseaux. Enfin, nous examinons le code source PyTorch de l'exemple « Deep Convolutional Generative Adversarial Networks » (DCGAN).<br>
 <b>Ressources : </b>
 <a href="https://www.youtube.com/watch?v=xYc11zyZ26M">vidéo</a>,
 <a href="https://atcold.github.io/pytorch-Deep-Learning/fr/week09/09-3/">notes de cours</a>, 
+<a href="https://atcold.github.io/NYU-DLSP21/fr/week09/09-3/">compléments</a>,
 <a href="https://github.com/Atcold/pytorch-Deep-Learning/blob/master/slides/01%20-%20Spiral%20classification.pdf">diapositives</a>,
 <a href="https://github.com/lbourdois/pytorch-Deep-Learning-Notebooks-in-French/blob/master/01-tensor_tutorial.ipynb">notebook 1</a>,
 <a href="https://github.com/lbourdois/pytorch-Deep-Learning-Notebooks-in-French/blob/master/02-space_stretching.ipynb">notebook 2</a><br><br>
 
 <b>Unité 10</b><br>
-<a href="https://www.youtube.com/watch?v=0KeR6i1_56g"><b>CM : Apprentissage autosupervisé en vision par ordinateur</b></a><br>
+• <a href="https://www.youtube.com/watch?v=0KeR6i1_56g"><b>CM : Apprentissage autosupervisé en vision par ordinateur</b></a><br>
 Deuxième séance avec un intervenant invité, Ishan Misra, pour parler d'apprentissage autosupervisé (SSL) en vision par ordinateur. Nous abordons la manière dont les tâches de prétexte aident le SSL et voyons quelques exemples de tâches de prétexte en images, en vidéos et en vidéos avec du son. Nous essayons d'avoir une intuition des représentations apprises par les tâches de prétexte et de leurs défauts.
 Nous définissons les caractéristiques d'une bonne fonction pré-entraînée et nous expliquons comment nous pouvons y parvenir en utilisant le clustering et l'apprentissage contrastif. Nous nous focalisons notamment sur les modèles ClusterFit et PIRL.<br> 
 <b>Ressources : </b>
@@ -197,7 +217,7 @@ Nous définissons les caractéristiques d'une bonne fonction pré-entraînée et
 <a href="https://atcold.github.io/pytorch-Deep-Learning/fr/week10/10-1/">notes de cours 1/2</a>,
 <a href="https://atcold.github.io/pytorch-Deep-Learning/fr/week10/10-2/">notes de cours 2/2</a>, 
 <a href="https://drive.google.com/file/d/1Q7LtZyIS1f3TfeTGll3aDtWygh3GAfCb/view">diapositives</a><br>
-<a href="https://www.youtube.com/watch?v=A3klBqEWR-I"><b>TD : Le « Truck Backer-Upper »</b></a><br>
+• <a href="https://www.youtube.com/watch?v=A3klBqEWR-I"><b>TD : Le « Truck Backer-Upper »</b></a><br>
 Nous explorons le problème du « Truck Backer-Upper » (Nguyen & Widrow, '90). Ce problème montre comment résoudre un problème de contrôle non linéaire à l'aide de réseaux de neurones. Nous apprenons un modèle de la cinématique d'un camion et optimisons un contrôleur à l'aide de ce modèle appris. Nous constatons que le contrôleur est capable d'apprendre des comportements complexes à partir de données purement observationnelles.<br>
 <b>Ressources : </b>
 <a href="https://www.youtube.com/watch?v=A3klBqEWR-I">vidéo</a>,
@@ -206,7 +226,7 @@ Nous explorons le problème du « Truck Backer-Upper » (Nguyen & Widrow, '90). 
 <a href="https://github.com/lbourdois/pytorch-Deep-Learning-Notebooks-in-French/blob/master/14-truck_backer-upper.ipynb">notebook</a><br><br>
 
 <b>Unité 11</b><br>
-<a href="https://www.youtube.com/watch?v=bj1fh3BvqSU"><b>CM : Fonctions d’activation et de perte sur PyTorch</b></a><br>
+• <a href="https://www.youtube.com/watch?v=bj1fh3BvqSU"><b>CM : Fonctions d’activation et de perte sur PyTorch</b></a><br>
 Ce cours aborde les fonctions d'activation courantes dans Pytorch. En particulier, nous comparons les activations avec coude(s) et les activations lisses. La première catégorie est préférée car la seconde peut souffrir du problème de disparition du gradient.
 Nous continuons avec les pertes basées sur une marge et leurs applications notamment dans le cadre des EBMs.<br> 
 <b>Ressources : </b>
@@ -214,16 +234,17 @@ Nous continuons avec les pertes basées sur une marge et leurs applications nota
 <a href="https://atcold.github.io/pytorch-Deep-Learning/fr/week11/11-1/">notes de cours 1/2</a>,
 <a href="https://atcold.github.io/pytorch-Deep-Learning/fr/week11/11-2/">notes de cours 2/2</a>, 
 <a href="https://drive.google.com/file/d/1Q7LtZyIS1f3TfeTGll3aDtWygh3GAfCb/view">diapositives</a><br>
-<a href="https://www.youtube.com/watch?v=VcrCr-KNBHc"><b>TD : La prédiction et l’apprentissage de politique sous contrainte (PPUU)</b></a><br>
+• <a href="https://www.youtube.com/watch?v=VcrCr-KNBHc"><b>TD : La prédiction et l’apprentissage de politique sous contrainte (PPUU)</b></a><br>
 Nous proposons un apprentissage efficace des politiques pour conduire dans un trafic dense. Nous entraînons ainsi plusieurs politiques en déroulant un modèle appris de la dynamique du monde réel en optimisant différentes fonctions de coût. L'idée est de minimiser l'incertitude dans la prédiction du modèle en introduisant un terme de coût qui représente la divergence du modèle par rapport aux états sur lesquels il est entraîné.<br>
 <b>Ressources : </b>
 <a href="https://www.youtube.com/watch?v=VcrCr-KNBHc">vidéo</a>,
 <a href="https://atcold.github.io/pytorch-Deep-Learning/fr/week11/11-3/">notes de cours</a>, 
+<a href="https://atcold.github.io/NYU-DLSP21/fr/week12/12-3/">compléments</a>,
 <a href="https://github.com/Atcold/pytorch-Deep-Learning/blob/master/slides/01%20-%20Spiral%20classification.pdf">diapositives</a>,
 <a href="https://github.com/Atcold/pytorch-PPUU">notebook</a><br><br>
 
 <b>Unité 12</b><br>
-<a href="https://www.youtube.com/watch?v=6D4EWKJgNn0"><b>CM : Apprentissage profond pour le traitement du langage naturel</b></a><br>
+• <a href="https://www.youtube.com/watch?v=6D4EWKJgNn0"><b>CM : Apprentissage profond pour le traitement du langage naturel</b></a><br>
 Troisième invité du cours : Mike Lewis. Nous examinons avec lui les différentes architectures utilisées dans les applications du traitement du langage naturel en commençant par les ConvNets, les RNNs et finalement les <i>transformers</i>. Nous nous focalisation sur les différents modules qui composent les <i>transformers</i> et sur des astuces permettant de les entraîner de manière efficace.
 La suite de la présentation porte sur la recherche en faisceau comme une solution intermédiaire entre le décodage gourmand et la recherche exhaustive. Nous considérons le cas où l'on souhaite échantillonner à partir de la distribution générative et introduisons l'échantillonnage top-k. Ensuite, nous introduisons les modèles séquence à séquence et la rétro-traduction. Nous terminons avec une discussion sur le word2vec, GPT et BERT. 
 <b>Ressources : </b>
@@ -231,16 +252,17 @@ La suite de la présentation porte sur la recherche en faisceau comme une soluti
 <a href="https://atcold.github.io/pytorch-Deep-Learning/fr/week12/12-1/">notes de cours 1/2</a>,
 <a href="https://atcold.github.io/pytorch-Deep-Learning/fr/week12/12-2/">notes de cours 2/2</a>, 
 <a href="https://drive.google.com/file/d/1Q7LtZyIS1f3TfeTGll3aDtWygh3GAfCb/view">diapositives</a><br>
-<a href="https://www.youtube.com/watch?v=f01J0Dri-6k"><b>TD : L’attention et le Transformer</b></a><br>
+• <a href="https://www.youtube.com/watch?v=f01J0Dri-6k"><b>TD : L’attention et le <i>transformer</i></b></a><br>
 Nous introduisons l'attention en nous concentrant sur l'auto-attention. Nous poursuivons en discutant de la façon de représenter les requêtes, les clés et les valeurs comme des rotations d'une entrée. Enfin, nous implémentons transformer de base et comparons le paradigme de l'encodeur-décodeur aux architectures séquentielles.<br>
 <b>Ressources : </b>
 <a href="https://www.youtube.com/watch?v=f01J0Dri-6k">vidéo</a>,
 <a href="https://atcold.github.io/pytorch-Deep-Learning/fr/week12/12-3/">notes de cours</a>, 
+<a href="https://atcold.github.io/NYU-DLSP21/fr/week10/10-3/">compléments</a>,
 <a href="https://github.com/Atcold/pytorch-Deep-Learning/blob/master/slides/01%20-%20Spiral%20classification.pdf">diapositives</a>,
 <a href="https://github.com/lbourdois/pytorch-Deep-Learning-Notebooks-in-French/blob/master/15-transformer.ipynb">notebook</a><br><br>
 
 <b>Unité 13</b><br>
-<a href="https://www.youtube.com/watch?v=Iiv9R6BjxHM"><b>CM : Les réseaux de neurones convolutifs pour graphes (GCNs)</b></a><br>
+• <a href="https://www.youtube.com/watch?v=Iiv9R6BjxHM"><b>CM : Les réseaux de neurones convolutifs pour graphes (GCNs)</b></a><br>
 Quatrième invité : Xavier Bresson nous parle de la manière d'étendre les réseaux de neurones convolutifs au domaine des graphes. Nous comprenons les caractéristiques des graphes et définissons la convolution des graphes.
 Nous couvrons ensuite le spectre complet des réseaux convolutifs pour graphe (GCN) : les réseaux spectraux (via convolution spectrale) et les réseaux spatiaux (via <i>template matching</i>).
 Enfin les différentes architectures employant les deux approches sont détaillées avec leurs avantages et inconvénients, expériences, <i>benchmarks</i> et applications.<br> 
@@ -249,7 +271,7 @@ Enfin les différentes architectures employant les deux approches sont détaill�
 <a href="https://atcold.github.io/pytorch-Deep-Learning/fr/week13/13-1/">notes de cours 1/2</a>,
 <a href="https://atcold.github.io/pytorch-Deep-Learning/fr/week13/13-2/">notes de cours 2/2</a>, 
 <a href="https://drive.google.com/file/d/1Q7LtZyIS1f3TfeTGll3aDtWygh3GAfCb/view">diapositives</a><br>
-<a href="https://www.youtube.com/watch?v=2aKXWqkbpWg"><b>TD : Les réseaux de neurones pour graphes (GNNs)</b></a><br>
+• <a href="https://www.youtube.com/watch?v=2aKXWqkbpWg"><b>TD : Les réseaux de neurones pour graphes (GNNs)</b></a><br>
 Dans ce TP nous voyons la connexion entre le concept de GCN et l'auto-attention. Après avoir compris la notation générale, la représentation et les équations du GCN, nous plongeons dans la théorie et le code d'un type spécifique de GCN connu sous le nom de <i>Residual Gated GCN</i>.<br>
 <b>Ressources : </b>
 <a href="https://www.youtube.com/watch?v=2aKXWqkbpWg">vidéo</a>,
@@ -258,7 +280,7 @@ Dans ce TP nous voyons la connexion entre le concept de GCN et l'auto-attention.
 <a href="https://github.com/lbourdois/pytorch-Deep-Learning-Notebooks-in-French/blob/master/16-gated_GCN.ipynb">notebook</a><br><br>
 
 <b>Unité 14</b><br>
-<a href="https://www.youtube.com/watch?v=gYayCG6YyO8"><b>CM : Prédiction utilisant la structure avec les EBMs</b></a><br>
+• <a href="https://www.youtube.com/watch?v=gYayCG6YyO8"><b>CM : Prédiction utilisant la structure avec les EBMs</b></a><br>
 Dans ce cours nous abordons la prédiction basée sur la structure. Nous présentons d'abord le graphe factoriel basé sur l'énergie et l'inférence efficace pour celui-ci et donnons quelques exemples.
 Après avoir passé un certain temps à comparer différentes fonctions de perte, nous discutons de l'application de l'algorithme de Viterbi et de l'algorithme <i>forward</i> aux <i>Graph Transformer Networks</i>.
 Nous terminons avec la formulation lagrangienne de la rétropropagation et à l'inférence variationnelle pour les modèles à base d'énergie.<br> 
@@ -267,7 +289,7 @@ Nous terminons avec la formulation lagrangienne de la rétropropagation et à l'
 <a href="https://atcold.github.io/pytorch-Deep-Learning/fr/week14/14-1/">notes de cours 1/2</a>,
 <a href="https://atcold.github.io/pytorch-Deep-Learning/fr/week14/14-2/">notes de cours 2/2</a>, 
 <a href="https://drive.google.com/file/d/1Q7LtZyIS1f3TfeTGll3aDtWygh3GAfCb/view">diapositives</a><br>
-<a href="https://www.youtube.com/watch?v=DL7iew823c0"><b>TD : Surapprentissage et régularisation, et réseaux de neurones bayésiens</b></a><br>
+• <a href="https://www.youtube.com/watch?v=DL7iew823c0"><b>TD : Surapprentissage et régularisation, et réseaux de neurones bayésiens</b></a><br>
 Lors de l'entraînement de modèles hautement paramétrés tels que les réseaux de neurones profonds, il existe un risque de surentraînement aux données d'entraînement. Cela conduit à une plus grande erreur de généralisation. Pour aider à réduire le surentraînement, nous pouvons introduire une régularisation dans notre entraînement, en décourageant certaines solutions pour diminuer la mesure dans laquelle nos modèles s'adapteront au bruit.<br>
 <b>Ressources : </b>
 <a href="https://www.youtube.com/watch?v=DL7iew823c0">vidéo</a>,
@@ -277,13 +299,13 @@ Lors de l'entraînement de modèles hautement paramétrés tels que les réseaux
 <a href="https://github.com/lbourdois/pytorch-Deep-Learning-Notebooks-in-French/blob/master/13-bayesian_nn..ipynb">notebook 2</a><br><br>
 
 <b>Unité 15</b><br>
-<a href="https://www.youtube.com/watch?v=sbhr2wjU1-I"><b>TD partie A : Inférence pour les EBMs à variable latente</b></a><br>
+• <a href="https://www.youtube.com/watch?v=sbhr2wjU1-I"><b>TD partie A : Inférence pour les EBMs à variable latente</b></a><br>
 Lorsque l'on rencontre des données avec plusieurs sorties pour une seule entrée, les réseaux <i>feed-forward</i> ne peuvent pas capturer de telles dépendances implicites. C'est là que les modèles à base d'énergie à variables latentes viennent à la rescousse. Nous développons un exemple d'ellipse avec une entrée fixe et la formulation optimale du modèle. Ensuite, nous appliquons les EBMs à variables latentes pour inférer les meilleures variables latentes qui peuvent apprendre les relations implicites.<br> 
 <b>Ressources : </b>
 <a href="https://www.youtube.com/watch?v=sbhr2wjU1-I">vidéo</a>, 
 <a href="https://atcold.github.io/pytorch-Deep-Learning/fr/week15/15-1/">notes de cours</a>,
 <a href="">diapositives</a><br>
-<a href="https://www.youtube.com/watch?v=XLSb1Cs1Jao"><b>TD partie B : Entraînement des EBMs à variable latente</b></a><br>
+• <a href="https://www.youtube.com/watch?v=XLSb1Cs1Jao"><b>TD partie B : Entraînement des EBMs à variable latente</b></a><br>
 Nous commençons en introduisant une version relaxée de l'énergie libre en modifiant la température pour lisser la fonction d'énergie. Puis nous démontrons comment entraîner des EBMs en minimisant les fonctions de perte avec plusieurs exemples. Enfin, nous donnons un exemple concret d'apprentissage autosupervisé, dans lequel nous entraînons un EBM pour apprendre une variété de données en forme de corne.<br>
 <b>Ressources : </b>
 <a href="https://www.youtube.com/watch?v=XLSb1Cs1Jao">vidéo</a>,
@@ -291,7 +313,7 @@ Nous commençons en introduisant une version relaxée de l'énergie libre en mod
 <a href="">diapositives</a><br><br>
 
 <b>Unité 16</b><br>
-<a href="https://www.youtube.com/watch?v=8L10w1KoOU8"><b>CM : Apprentissage autosupervisé en vision par ordinateur (suite)</b></a><br>
+• <a href="https://www.youtube.com/watch?v=8L10w1KoOU8"><b>CM : Apprentissage autosupervisé en vision par ordinateur (suite)</b></a><br>
 Ishan Misra revient un seconde fois pour nous parler de l'apprenttisage autosupervisé en vision. L'accent est mis sur les solutions triviales associées aux tâches de prétexte.
 Puis une catégorisation des méthodes autosupervisées récentes avec une introduction à l’apprentissage contrastif et à la fonction de perte utilisée. 
 Nous poursuivons avec de brèves présentations de PIRL, SimCLR et MoCo suivies de SwAV qui est une méthode basée sur du clustering. 
@@ -303,7 +325,7 @@ Ishan aborde ensuite les méthodes SEER, AVID + CMA et la distillation. Il concl
 <a href="https://drive.google.com/file/d/1BQlWMVesOcioW69RCKWCjp6280Q42W9q/edit">diapositives</a><br><br>
 
 <b>Unité 17</b><br>
-<a href="https://www.youtube.com/watch?v=Of9s8epjflU"><b>CM : Reconnaissance vocale et <i>Graph Transformer Networks</i></b></a><br>
+• <a href="https://www.youtube.com/watch?v=Of9s8epjflU"><b>CM : Reconnaissance vocale et <i>Graph Transformer Networks</i></b></a><br>
 Awni Hannun nous offre une introduction au problème de la reconnaissance de la parole à l’aide de modèles neuronaux en mettant l’accent sur la perte CTC (<i>Connectionist Temporal Classification</i>) pour l’entraînement et l’inférence lorsque les séquences d’entrée et de sortie sont de longueurs différentes.
 Nous discutons de l’utilisation de la recherche en faisceau pendant l’inférence ainsi que de la façon dont cette procédure peut être modélisée au moment de l’entraînement d’un <i>Graph Transformer Network</i> (GTN). Les GTNs sont essentiellement des « accepteur d’état fini pondéré » (WFSA pour « <i>Weighted Finite State Acceptor</i> ») avec différenciation automatique permettant d’encoder des a priori dans un graphe. Il existe différents types d’états finis pondérés et opérations, notamment l’union, l’étoile de Kleene, l’intersection, la composition et le score <i>forward</i>. Nous pouvons facilement implémenter ces réseaux en utilisant la bibliothèque gtn.<br> 
 <b>Ressources : </b>
@@ -313,7 +335,7 @@ Nous discutons de l’utilisation de la recherche en faisceau pendant l’infér
 <a href="https://drive.google.com/file/d/1-u2fSSICaWoFu91oiMsd2mAhg6ZGomMg/edit">diapositives</a><br><br>
 
 <b>Unité 18</b><br>
-<a href="https://www.youtube.com/watch?v=fR42OOy9ROo"><b>CM : Traduction automatique à faibles ressources</b></a><br>
+• <a href="https://www.youtube.com/watch?v=fR42OOy9ROo"><b>CM : Traduction automatique à faibles ressources</b></a><br>
 Nous abordons avec Marc'Aurelio Ranzato la modélisation du langage en traduction automatique neuronale. 
 En outre, nous discutons des problèmes rencontrés en raison des langues et de la nécessité d’une traduction automatique à faibles ressources. 
 Nous examinons également une étude de cas, les différentes étapes du cycle de recherche et la manière dont elles peuvent être utilisées pour la traduction automatique.
@@ -321,11 +343,11 @@ Enfin nous discutons des incompatibilités potentielles entre les domaines de l�
 <b>Ressources : </b>
 <a href="https://www.youtube.com/watch?v=fR42OOy9ROo">vidéo</a>, 
 <a href="https://atcold.github.io/NYU-DLSP21/fr/week12/12-1/">notes de cours 1/2</a>,
-<a href="https://atcold.github.io/NYU-DLSP21/fr/week12/12-2/">notes de cours 2/2</a>, 
+<a href="https://atcold.github.io/NYU-DLSP21/fr/week12/12-2/">notes de cours 2/2</a>,  
 <a href="https://drive.google.com/file/d/1pm1fM1DFqCHrjGorCQCwg5SgMjwZBwGR/edit">diapositives</a><br><br>
 
 <b>Unité 19</b><br>
-<a href="https://www.youtube.com/watch?v=5VjEBHWuYs8"><b>TD : Méthodes d'enchâssements joints contrastives</b></a><br>
+• <a href="https://www.youtube.com/watch?v=5VjEBHWuYs8"><b>TD : Méthodes d'enchâssements joints contrastives</b></a><br>
 Cette présentation de Jiachen Zhu peut être vue comme la suite des vidéos d'Ishan Misra puisque nous traitons de l’apprentissage de représentations visuelles avec l’apprentissage autosupervisé. Les méthodes applicables peuvent être classées en modèles génératifs, tâches de prétexte et méthodes d’enchâssements joints (JEMs). Dans les modèles génératifs, nous entraînons le modèle à reconstruire l’image originale à partir de l’image bruitée. Dans les tâches de prétexte, nous entraînons le modèle à trouver un moyen intelligent de générer des pseudo-étiquettes. Les méthodes d’enchâssements joints tentent de rendre leur backbone robuste à certaines distorsions et invariant à l’augmentation des données. Les méthodes d’entraînement des JEMs peuvent être classées en quatre types : méthodes contrastives, méthodes non-contrastives, méthodes de clustering et les « autres méthodes ». Nous concluons en discutant des méthodes contrastives qui rapprochent les paires positives et éloignent les paires négatives.<br> 
 <b>Ressources : </b>
 <a href="https://www.youtube.com/watch?v=5VjEBHWuYs8">vidéo</a>, 
@@ -422,7 +444,7 @@ Cela signifie que :<br>
 <code>
 @misc{nyudlcourseinfrench,<br>
   author = {Canziani, Alfredo and LeCun, Yann and Bourdois, Loïck},<br>
-  title = {Cours d’apprentissage profond de l’Université de New York},<br>
+  title = {Cours d’apprentissage profond de la New York University},<br>
   howpublished = "\url{https://lbourdois.github.io/cours-dl-nyu/}",<br>
   year = {2023}"}</code>
   
@@ -578,7 +600,13 @@ Nous avons fait le choix de ne pas traduire certains termes anglais pour des rai
     <tr>
       <td rowspan="1">Transformer</td>
       <td rowspan="1">Transformer</td>
-      <td>A COMPLETER.</td>
+      <td>En français, les mots anglais se terminant par « er » sont généralement traduits par « eur », comme par exemple « encoder » en « encodeur » ou, dans la même logique, « decoder » en « decodeur ».
+Logiquement, « tranformers » devrait se traduire par « transformeurs ». Mais ce n'est pas si simple.
+L'article [*Gradient-based learning applied to document recognition*](http://yann.lecun.com/exdb/publis/pdf/lecun-01a.pdf) est généralement cité pour ses trois premiers chapitres exposant un ConvNet appliqué à la reconnaissance MNIST. Mais les suivant traite des GTNs, les *Graph Transformer Networks*, qui sont issus du travail de Léon Bottou.
+Comme leur nom l'indique, les GTNs contiennent le mot « transformer », mais cela n'a rien à voir avec celui de Vaswani et al. ayant vu le jour plus de 19 ans plus tard. 
+Les articles traitent de choses différentes, il faudrait traduire le « transformer » de chaque papier différemment pour qu’il n’y ait pas de confusion entre les deux concepts.
+En attendant de pouvoir trancher cette question, il a été choisi de laisser le « transformer » en sa forme anglaise indiquer en italique pour éviter une confusion supplémentaire avec le verbe « transformer » en français.
+</td>
     </tr>
   </tbody>
 </table>
