@@ -1,5 +1,5 @@
 main:
   - title: '<i class="fa-brands fa-youtube"></i> Vidéos YouTube'
-    url: "https://www.youtube.com/playlist?list=PLLHTzKZzVU9eaEyErdV26ikyolxOsz6mq"
+    url: "https://www.youtube.com/watch?v=0bMe_vCZo30&list=PL5v98r88P9ZanM5WxvQcLJK-GKr4hQms5"
   - title: '<i class="fa-brands fa-github"></i> Code'
     url: "https://github.com/lbourdois/pytorch-Deep-Learning-Notebooks-in-French"
