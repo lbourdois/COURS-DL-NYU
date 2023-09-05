@@ -13,13 +13,11 @@
 
 # Site Settings
 title: COURS DE DEEP LEARNING DE LA NYU
-email:
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
-twitter_username: username
-github_username: username
+description: "Traduction française du cours d'apprentissage profond de Yann Le Cun et Alfredo Canziani de la New York University"
 minimal_mistakes_skin: "dark"
-# google_site_verification: "A REMPLIR"
+google_site_verification: "ouC89r8DsM44-CzfK9zKiulBYb7coucYBADYgNFnJpQ"
+twitter_username: BdsLoick
+github_username: lbourdois
 search: false
 
 
